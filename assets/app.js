@@ -17,15 +17,11 @@
 
         var gifDiv = $("#gif-view");
 
-        var imgURL = response.data[2].images.preview_webp.url;
+        var imgURL = response.data[0].images.preview_webp.url;
 
         var image = $("<img>").attr("src", imgURL);
 
         gifDiv.append(image);
-
-        var title = response.data[2].title
-
-        gifDiv.prepend(title)
     
      });
    }
